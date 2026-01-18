@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+</head>
+<body>
+    <h2>Saved URLs</h2>
+
+    <ul>
+        {% for url in urls %}
+            <li>{{ url.original_url }} → {{ url.short_url }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Go Back</a>
+</body>
+</html>
